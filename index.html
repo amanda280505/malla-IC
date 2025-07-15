@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva Ingeniería Comercial</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Malla Interactiva Ingeniería Comercial</h1>
+  <div class="malla">
+
+    <!-- Primer Año -->
+    <div class="semestre">
+      <h2>Semestre 1</h2>
+      <div class="ramo" data-id="micro-intro">Introducción a la Microeconomía</div>
+      <div class="ramo" data-id="mat1">Matemática I</div>
+      <div class="ramo" data-id="adm1">Introducción a la Administración I</div>
+      <div class="ramo" data-id="hab1">Habilidades de Aprendizaje I</div>
+      <div class="ramo" data-id="etica1">Ética General</div>
+      <div class="ramo" data-id="hab2">Habilidades de Aprendizaje II</div>
+      <div class="ramo" data-id="ing1">Inglés I</div>
+    </div>
+
+    <div class="semestre">
+      <h2>Semestre 2</h2>
+      <div class="ramo" data-id="micro-intro2">Introducción a la Microeconomía</div>
+      <div class="ramo" data-id="mat2" data-prer="mat1">Matemáticas II</div>
+      <div class="ramo" data-id="adm2" data-prer="adm1">Introducción a la Administración II</div>
+      <div class="ramo" data-id="cont1">Contabilidad I</div>
+      <div class="ramo" data-id="hab3">Habilidades de Aprendizaje III</div>
+      <div class="ramo" data-id="ing2" data-prer="ing1">Inglés II</div>
+    </div>
+
+    <!-- Segundo Año -->
+    <div class="semestre">
+      <h2>Semestre 3</h2>
+      <div class="ramo" data-id="micro1" data-prer="micro-intro">Microeconomía I</div>
+      <div class="ramo" data-id="mat3" data-prer="mat2">Matemáticas III</div>
+      <div class="ramo" data-id="pensamiento" data-prer="adm2">Pensamiento Estratégico</div>
+      <div class="ramo" data-id="cont2" data-prer="cont1">Contabilidad II</div>
+      <div class="ramo" data-id="historia">Historia Económica y de la Empresa</div>
+      <div class="ramo" data-id="tic">Tecnología de la Información</div>
+      <div class="ramo" data-id="ing3" data-prer="ing2">Inglés III</div>
+    </div>
+
+    <div class="semestre">
+      <h2>Semestre 4</h2>
+      <div class="ramo" data-id="macro1" data-prer="micro1">Macroeconomía I</div>
+      <div class="ramo" data-id="mat4" data-prer="mat3">Matemáticas IV</div>
+      <div class="ramo" data-id="personas-org" data-prer="pensamiento">Personas y Organizaciones</div>
+      <div class="ramo" data-id="estad1">Estadística I</div>
+      <div class="ramo" data-id="mkt1">Marketing I</div>
+    </div>
+
+    <!-- Tercer Año (continúa en siguiente parte) -->
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    <!-- Tercer Año -->
+    <div class="semestre">
+      <h2>Semestre 5</h2>
+      <div class="ramo" data-id="micro2" data-prer="micro1">Microeconomía II</div>
+      <div class="ramo" data-id="gp1" data-prer="personas-org">Gestión de Personas I</div>
+      <div class="ramo" data-id="estad2" data-prer="estad1">Estadística II</div>
+      <div class="ramo" data-id="fin1" data-prer="mat3">Finanzas I</div>
+      <div class="ramo" data-id="hab4" data-prer="hab3">Habilidades de Aprendizaje IV</div>
+      <div class="ramo" data-id="ing4" data-prer="ing3">Inglés IV</div>
+    </div>
+
+    <div class="semestre">
+      <h2>Semestre 6</h2>
+      <div class="ramo" data-id="macro2" data-prer="macro1">Macroeconomía II</div>
+      <div class="ramo" data-id="cont-gestion" data-prer="cont2">Contabilidad para la Gestión</div>
+      <div class="ramo" data-id="econometria" data-prer="estad2">Econometría para la Gestión</div>
+      <div class="ramo" data-id="mkt2" data-prer="mkt1">Marketing II</div>
+      <div class="ramo" data-id="hp1">Habilidades Profesionales I</div>
+      <div class="ramo" data-id="hp2" data-prer="hp1">Habilidades Profesionales II</div>
+    </div>
+
+    <!-- Cuarto Año -->
+    <div class="semestre">
+      <h2>Semestre 7</h2>
+      <div class="ramo" data-id="org-ind" data-prer="micro2">Organización Industrial</div>
+      <div class="ramo" data-id="innovacion" data-prer="tic">Gestión de la Innovación</div>
+      <div class="ramo" data-id="gp2" data-prer="gp1">Gestión de Personas II</div>
+      <div class="ramo" data-id="fin2" data-prer="fin1">Finanzas II</div>
+      <div class="ramo" data-id="hp3" data-prer="hp2">Habilidades Profesionales III</div>
+      <div class="ramo" data-id="ofc1">Formación Complementaria I (OFC)</div>
+    </div>
+
+    <div class="semestre">
+      <h2>Semestre 8</h2>
+      <div class="ramo" data-id="gp3" data-prer="gp2">Gestión de Personas III</div>
+      <div class="ramo" data-id="operaciones" data-prer="estad2">Gestión de Operaciones</div>
+      <div class="ramo" data-id="eval-proy" data-prer="fin2">Evaluación de Proyectos</div>
+      <div class="ramo" data-id="estrategia" data-prer="pensamiento">Estrategia</div>
+      <div class="ramo" data-id="ofc2">Formación Complementaria II (OFC)</div>
+    </div>
+
+    <!-- Quinto Año -->
+    <div class="semestre">
+      <h2>Semestre 9</h2>
+      <div class="ramo" data-id="emprendimiento" data-prer="innovacion">Emprendimiento</div>
+      <div class="ramo" data-id="consultoria" data-prer="gp2">Consultoría</div>
+      <div class="ramo" data-id="juego" data-prer="estrategia">Juego de Negocios</div>
+      <div class="ramo" data-id="etica2" data-prer="etica1">Ética en los Negocios y en la Economía</div>
+      <div class="ramo" data-id="hp4" data-prer="hp3">Habilidades Profesionales IV</div>
+      <div class="ramo" data-id="ofc3">Formación Complementaria III (OFC)</div>
+    </div>
+
+    <div class="semestre">
+      <h2>Semestre 10</h2>
+      <div class="ramo" data-id="titulacion" data-prer="juego">Taller de Titulación</div>
+      <div class="ramo" data-id="hp5" data-prer="hp4">Habilidades Profesionales V</div>
+      <div class="ramo" data-id="ofc4">Formación Complementaria IV (OFC)</div>
+      <div class="ramo" data-id="ofc5">Formación Complementaria V (OFC)</div>
+    </div>
 
